@@ -12,40 +12,46 @@
     <h1 class="text-center mt-4">YOUR QUIZ TITLE HERE</h1>
     
     <!-- Start quiz element -->
-    <div class="container d-flex justify-content-center">
-        <div class="card my-4 p-4" style="width: 75%;">
-          <h4 class="mb-3">YOUR QUIZ QUESTION HERE</h4>
-          <div class="row g-2">
-            <div class="col-6">
-              <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A">ANSWER CHOICE A</button>
-            </div>
-            <div class="col-6">
-              <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B">ANSWER CHOICE B</button>
-            </div>
-            <div class="col-6">
-              <button class="btn btn-outline-primary w-100 answer-btn" data-answer="C">ANSWER CHOICE C</button>
-            </div>
-            <div class="col-6">
-              <button class="btn btn-outline-primary w-100 answer-btn" data-answer="D">ANSWER CHOICE D</button>
-            </div>
+    <div class="container d-flex justify-content-center" id="question-1">
+      <div class="card my-4 p-4 question-block" style="width: 75%;">
+        <h4 class="mb-3">YOUR QUIZ QUESTION HERE</h4>
+        <div class="row g-2">
+          <div class="col-6">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="A">ANSWER CHOICE A</button>
+          </div>
+          <div class="col-6">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="B">ANSWER CHOICE B</button>
+          </div>
+          <div class="col-6">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="C">ANSWER CHOICE C</button>
+          </div>
+          <div class="col-6">
+            <button class="btn btn-outline-primary w-100 answer-btn" data-answer="D">ANSWER CHOICE D</button>
           </div>
         </div>
+      </div>
     </div>
+
+    
+    
     <!-- End quiz element -->
 
     <!-- Add more quiz elements here -->
 
 
-    
+
+    <div class="container d-flex justify-content-center">
+      <button id="show-result" class="btn btn-success my-4">Show Results</button>
+    </div>    
     <!-- Output the result here -->
-    <div class="container d-flex justify-content-center" id = "result-container">
-        <div class="card my-4 p-4 text-center" style="width: 75%;">
-            <h4 class="mb-3">Your Result:</h4>
-            <p id="quiz-result" class="fs-5">UPDATE RESULT HERE.</p>
-        </div>
+    <div class="container d-flex justify-content-center">
+      <div id="result-container" class="card p-4 mb-4" style="width: 75%; display: none;">
+        <h3>Your Result:</h3>
+        <p id="result-text"></p>
+      </div>
     </div>
     
     <!-- Connect to your script file here -->
-
+     <script src = "./js/script.js"></script>
 </body>
 </html>
